@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import './demo/listview_demo.dart';
 import './demo/drawer_demo.dart';
 import './demo/bottomNavigationBar_demo.dart';
+import './demo/basic_demo.dart';
+import './demo/layout_demo.dart';
 
 // import 'demo/hello_demo.dart';
 
@@ -30,7 +32,6 @@ class MyApp extends StatelessWidget {
 }
 
 class Home extends StatelessWidget {
-  @override
   var appBar = AppBar(
     title: Text('keeper skr'),
     elevation: 30.0, //阴影 默认4.0
@@ -90,16 +91,18 @@ class Home extends StatelessWidget {
               //   color: Colors.black12,
               // ),
               ListViewDemo(),
-              Icon(
-                Icons.local_activity,
-                size: 128.0,
-                color: Colors.black12,
-              ),
-              Icon(
-                Icons.local_airport,
-                size: 128.0,
-                color: Colors.black12,
-              ),
+              // Icon(
+              //   Icons.local_activity,
+              //   size: 128.0,
+              //   color: Colors.black12,
+              // ),
+              BasicDemo(),
+              // Icon(
+              //   Icons.local_airport,
+              //   size: 128.0,
+              //   color: Colors.black12,
+              // ),
+              LayoutDemo(),
             ],
           ),
           // body: Hello(),
