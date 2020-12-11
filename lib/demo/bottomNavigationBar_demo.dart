@@ -25,10 +25,17 @@ class _BottomNavBarDemoState extends State<BottomNavBarDemo> {
       items: [
         //大于四项类型会发生变化
         BottomNavigationBarItem(
-            icon: Icon(Icons.explore), title: Text('explore')),
+            icon: Icon(Icons.explore),
+            // ignore: deprecated_member_use
+            title: Text('explore')),
+
         BottomNavigationBarItem(
-            icon: Icon(Icons.history), title: Text('history')),
+            icon: Icon(Icons.history),
+            // ignore: deprecated_member_use
+            title: Text('history')),
+        // ignore: deprecated_member_use
         BottomNavigationBarItem(icon: Icon(Icons.list), title: Text('list')),
+        // ignore: deprecated_member_use
         BottomNavigationBarItem(icon: Icon(Icons.person), title: Text('My')),
       ],
     );
