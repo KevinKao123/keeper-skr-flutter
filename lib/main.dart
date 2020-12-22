@@ -1,5 +1,6 @@
 //materal design
 import 'package:flutter/material.dart';
+import 'package:keeper_flutter/demo/form_demo.dart';
 import './demo/listview_demo.dart';
 import './demo/drawer_demo.dart';
 import './demo/bottomNavigationBar_demo.dart';
@@ -8,6 +9,7 @@ import './demo/layout_demo.dart';
 import './demo/view_demo.dart';
 import './demo/sliver_demo.dart';
 import './demo/navigator_demo.dart';
+import './demo/form_demo.dart';
 
 // import 'demo/hello_demo.dart';
 
@@ -26,18 +28,21 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // home: Home(),
       home: NavigatorDemo(),
-      initialRoute: '/n',
+      initialRoute: '/form',
       routes: {
         // '/n': (context) => NavigatorDemo(),
         '/n': (context) => Home(),
 
         '/about': (context) => Pagess(title: 'aboutaaa'),
+        '/form': (context) => FormDemo()
       },
       theme: ThemeData(
-          //点按效果
-          primarySwatch: Colors.purple,
-          highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
-          splashColor: Colors.white70),
+        //点按效果
+        primarySwatch: Colors.purple,
+        highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
+        splashColor: Colors.white70,
+        accentColor: Color.fromRGBO(3, 54, 255, 1),
+      ),
     );
   }
 }

@@ -10,17 +10,31 @@ class NavigatorDemo extends StatelessWidget {
         children: <Widget>[
           FlatButton(onPressed: null, child: Text('Home')),
           FlatButton(
-              onPressed: () {
-                // Navigator.of(context).push(
-                //   MaterialPageRoute(
-                //     builder: (BuildContext context) => Page(
-                //       title: 'Abouttttt',
-                //     ),
-                //   ),
-                // );
-                Navigator.pushNamed(context, '/about');
-              },
-              child: Text('About')),
+            onPressed: () {
+              // Navigator.of(context).push(
+              //   MaterialPageRoute(
+              //     builder: (BuildContext context) => Page(
+              //       title: 'Abouttttt',
+              //     ),
+              //   ),
+              // );
+              Navigator.pushNamed(context, '/about');
+            },
+            child: Text('About'),
+          ),
+          FlatButton(
+            onPressed: () {
+              // Navigator.of(context).push(
+              //   MaterialPageRoute(
+              //     builder: (BuildContext context) => Page(
+              //       title: 'Abouttttt',
+              //     ),
+              //   ),
+              // );
+              Navigator.pushNamed(context, '/form');
+            },
+            child: Text('Form'),
+          ),
         ],
       ),
     ));
