@@ -8,19 +8,50 @@ class NavigatorDemo extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          FlatButton(onPressed: null, child: Text('Home')),
           FlatButton(
               onPressed: () {
-                // Navigator.of(context).push(
-                //   MaterialPageRoute(
-                //     builder: (BuildContext context) => Page(
-                //       title: 'Abouttttt',
-                //     ),
-                //   ),
-                // );
-                Navigator.pushNamed(context, '/about');
+                Navigator.pushNamed(context, '/n');
               },
-              child: Text('About')),
+              child: Text('Home')),
+          FlatButton(
+            onPressed: () {
+              // Navigator.of(context).push(
+              //   MaterialPageRoute(
+              //     builder: (BuildContext context) => Page(
+              //       title: 'Abouttttt',
+              //     ),
+              //   ),
+              // );
+              Navigator.pushNamed(context, '/about');
+            },
+            child: Text('About'),
+          ),
+          FlatButton(
+            onPressed: () {
+              // Navigator.of(context).push(
+              //   MaterialPageRoute(
+              //     builder: (BuildContext context) => Page(
+              //       title: 'Abouttttt',
+              //     ),
+              //   ),
+              // );
+              Navigator.pushNamed(context, '/form');
+            },
+            child: Text('Form'),
+          ),
+          FlatButton(
+            onPressed: () {
+              // Navigator.of(context).push(
+              //   MaterialPageRoute(
+              //     builder: (BuildContext context) => Page(
+              //       title: 'Abouttttt',
+              //     ),
+              //   ),
+              // );
+              Navigator.pushNamed(context, '/mdc');
+            },
+            child: Text('mdc'),
+          ),
         ],
       ),
     ));
