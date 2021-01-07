@@ -4,6 +4,10 @@ class FormDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('FormDemo'),
+        elevation: 0,
+      ),
       // body: ThemeDemo(),
       body: Theme(
         // data: ThemeData(primaryColor: Colors.black),
@@ -126,12 +130,14 @@ class _TextFieldDemoState extends State<TextFieldDemo> {
   @override
   void dispose() {
     textEditingController.dispose();
+    // ignore: todo
     // TODO: implement dispose
     super.dispose();
   }
 
   @override
   void initState() {
+    // ignore: todo
     // TODO: implement initState
     super.initState();
     // textEditingController.text = "hello skr";

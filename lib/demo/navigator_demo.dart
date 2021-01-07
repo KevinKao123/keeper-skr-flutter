@@ -8,7 +8,11 @@ class NavigatorDemo extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          FlatButton(onPressed: null, child: Text('Home')),
+          FlatButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/n');
+              },
+              child: Text('Home')),
           FlatButton(
             onPressed: () {
               // Navigator.of(context).push(
@@ -34,6 +38,19 @@ class NavigatorDemo extends StatelessWidget {
               Navigator.pushNamed(context, '/form');
             },
             child: Text('Form'),
+          ),
+          FlatButton(
+            onPressed: () {
+              // Navigator.of(context).push(
+              //   MaterialPageRoute(
+              //     builder: (BuildContext context) => Page(
+              //       title: 'Abouttttt',
+              //     ),
+              //   ),
+              // );
+              Navigator.pushNamed(context, '/mdc');
+            },
+            child: Text('mdc'),
           ),
         ],
       ),

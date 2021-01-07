@@ -10,6 +10,7 @@ import './demo/view_demo.dart';
 import './demo/sliver_demo.dart';
 import './demo/navigator_demo.dart';
 import './demo/form_demo.dart';
+import './demo/material_components.dart';
 
 // import 'demo/hello_demo.dart';
 
@@ -28,13 +29,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // home: Home(),
       home: NavigatorDemo(),
-      initialRoute: '/form',
+      initialRoute: '/mdc',
       routes: {
         // '/n': (context) => NavigatorDemo(),
         '/n': (context) => Home(),
 
         '/about': (context) => Pagess(title: 'aboutaaa'),
-        '/form': (context) => FormDemo()
+        '/form': (context) => FormDemo(),
+        '/mdc': (context) => MaterialComponents()
       },
       theme: ThemeData(
         //点按效果
